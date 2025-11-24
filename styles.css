@@ -1,0 +1,59 @@
+/* 1. Make <body> and <main> flex containers */
+body, main {
+    display: flex;
+}
+
+/* 2. Body is a vertical column */
+body {
+    flex-direction: column;
+}
+
+/* 3. Main is a horizontal row and expands automatically */
+main {
+    flex-direction: row;
+    flex: auto;
+}
+
+/* 4. Article takes 2/3, aside takes 1/3 */
+article {
+    flex: 2;
+}
+
+aside {
+    flex: 1;
+}
+
+/* 5. Allow scrolling inside article and aside */
+article, aside {
+    overflow-y: auto;
+}
+
+/* Give your site some personality */
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+article {
+    padding: 20px;
+    background: #fafafa;
+}
+
+aside {
+    padding: 20px;
+    background: #eee;
+}
+
+/* Hover styles allowed */
+header ul li:hover {
+    color: #ffcc00;
+    cursor: pointer;
+}
