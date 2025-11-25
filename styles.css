@@ -127,3 +127,329 @@ section:first-of-type > div:last-of-type p {
     font-size: 14px;
     color: #666;
 }
+
+/* =========================
+   Quote / Testimonial Section
+========================= */
+section:nth-of-type(2) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 50px;
+    background-color: #ffffff; /* match Figma background */
+    gap: 40px;
+}
+
+section:nth-of-type(2) > div:first-of-type {
+    flex: 1;
+    text-align: center;
+}
+
+section:nth-of-type(2) > div:first-of-type img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* adjust if Figma uses rounded corners */
+}
+
+section:nth-of-type(2) > div:last-of-type {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+}
+
+section:nth-of-type(2) blockquote {
+    font-size: 22px;
+    font-weight: 400;
+    font-style: italic;
+    color: #222; /* primary text color */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 40px;
+}
+
+section:nth-of-type(2) blockquote::before {
+    content: "“";
+    font-size: 50px;
+    color: #ff6600; /* accent color */
+    position: absolute;
+    left: 0;
+    top: -10px;
+}
+
+section:nth-of-type(2) h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+section:nth-of-type(2) p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+
+/* =========================
+   Videos / Tutorials Section
+========================= */
+section:nth-of-type(3) {
+    padding: 80px 50px;
+    background-color: #f9f9f9; /* optional, check Figma */
+}
+
+section:nth-of-type(3) h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #222; /* main headline color */
+    text-align: center;
+}
+
+section:nth-of-type(3) > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+section:nth-of-type(3) > div > div {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 calc(25% - 30px); /* four cards per row, adjust gap */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:nth-of-type(3) > div > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+section:nth-of-type(3) img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+section:nth-of-type(3) h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+section:nth-of-type(3) p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+section:nth-of-type(3) > div > div > div:first-of-type {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+section:nth-of-type(3) > div > div > div:first-of-type img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+section:nth-of-type(3) > div > div > div:nth-of-type(2) {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+section:nth-of-type(3) > div > div > p:last-of-type {
+    font-size: 12px;
+    color: #999;
+}
+
+/* =========================
+   Free Membership Section
+========================= */
+section:nth-of-type(4) {
+    padding: 80px 50px;
+    background-color: #ffffff; /* Figma background color */
+    text-align: center;
+}
+
+section:nth-of-type(4) h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #222;
+}
+
+section:nth-of-type(4) > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+section:nth-of-type(4) > div > div {
+    background-color: #f9f9f9; /* card background from Figma */
+    padding: 30px 20px;
+    border-radius: 10px;
+    flex: 1 1 calc(25% - 30px); /* four cards per row */
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:nth-of-type(4) > div > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+section:nth-of-type(4) > div > div img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+section:nth-of-type(4) > div > div h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+section:nth-of-type(4) > div > div p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Membership CTA Button */
+section:nth-of-type(4) button {
+    padding: 15px 35px;
+    background-color: #ff6600; /* accent color from Figma */
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section:nth-of-type(4) button:hover {
+    background-color: #e55b00;
+}
+
+/* =========================
+   FAQ Section
+========================= */
+section:nth-of-type(5) {
+    padding: 80px 50px;
+    background-color: #f9f9f9; /* Figma background */
+    text-align: center;
+}
+
+section:nth-of-type(5) h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #222;
+}
+
+/* FAQ container */
+section:nth-of-type(5) > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+/* Each FAQ column */
+section:nth-of-type(5) > div > div {
+    flex: 1 1 400px;
+    max-width: 500px;
+}
+
+/* Each question-answer pair */
+section:nth-of-type(5) h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    padding-right: 20px;
+}
+
+/* Optional: add plus/minus indicator for toggle */
+section:nth-of-type(5) h3::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    color: #ff6600; /* accent color */
+    transition: transform 0.3s ease;
+}
+
+/* Answer text */
+section:nth-of-type(5) > div > div > div:nth-of-type(2),
+section:nth-of-type(5) > div > div > div:nth-of-type(4) {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+    background-color: #222; /* dark background from Figma */
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+footer img {
+    width: 120px; /* adjust to Figma logo size */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+footer div i {
+    font-size: 20px;
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+footer div i:hover {
+    color: #ff6600; /* accent color on hover */
+}
+
+footer p {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 20px;
+}
